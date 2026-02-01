@@ -1,4 +1,5 @@
 # Parte 5 - Tipos Primitivos e Variáveis
+
 - **Tipos primitivos** são **palavras reservadas**, escritas em letras minúsculas, que determinam o **tipo** de uma variável;
 
 - O **tipo** da variável determina quanto espaço a variável declarada ocupará na memória, além de determinar os possíveis valores que podem ser atribuídos a ela;
@@ -21,7 +22,7 @@
  
     - É utilizado quando os valores envolvidos não são tão grandes ou quando se deseja economizar memória.
 
-  - **char:** representa uma única **letra/caractere**;
+  - **char:** representa uma única **letra/caractere**. Deve ser escrito entre **aspas simples**;
 
   - **byte:** representa um valor de até **1 byte (8 bits)**, o que varia entre -128 e 127;
 
@@ -40,3 +41,41 @@
   - O **valorAtribuido** deve corresponder ao tipo da variável a que está sendo atribuído;
  
   - O sinal de igual (=) representa **atribuição** de valores. O valor à direita será atribuído à variável na direita.
+
+# Parte 5.2 - Especificação de Tipos
+
+- Para indicar que um valor deve ser lido como **float**, deve-se colocar a letra **"F"** no final do número:
+
+  - EX: 2500.0F;
+ 
+- Para indicar que um valor deve ser lido como **double**, deve-se colocar a letra **"D"** no final do número *(não é o usual, pois o padrão já é o número decimal ser lido como double)*:
+
+   - EX: 2500.0D;
+  
+- Para indicar que um valor deve ser lido como **long**, deve-se colocar a letra **"L"** no final do número:
+
+  - EX: 15L;
+
+# Parte 5.3 - Coerção de Tipos
+
+- O **casting** é usado para fazer uma troca "forçada" do tipo de uma variável;
+
+- Essa troca é feita indicando, entre parênteses, o tipo que se deseja atribuir ao valor antes de escrevê-lo;
+
+  - EX: ```int idade = (int) 10000000000L;```
+    
+  - O Java irá "espremer" o número, originalmente de tipo *long*, para que caiba na variável com espaço de tipo *int*; 
+
+- É muito provável que, em casos onde se converte um valor de tamanho maior para um tipo menor, ocorra **perda de informação**, pois alguns bits terão que ser "jogados fora" para que o valor caiba na variável de menor espaço. Isso torna o resultado **imprevisível** nesse contexto;
+
+# Parte 5.4 - O Tipo String
+
+- O tipo string representa **conjuntos de caracteres**, que podem representar palavras, nomes, frases ou qualquer coisa que seja escrita;
+
+- O tipo string **não é** um tipo primitivo, e sim um **tipo de referência** ou **reference type**;
+
+- Por não ser um tipo primitivo, variáveis string devem ser declaradas com seu tipo escrito com a primeira letra maiúscula;
+
+- Os valores string devem ser escritos entre **aspas duplas**
+
+  - EX: ```String nome = "Daniel";```    
