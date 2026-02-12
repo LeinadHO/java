@@ -49,3 +49,15 @@
   - A segunda parte do for, ```i < 10```, indica a **condição de saída** do loop
  
   - A terceira parte do for, ```i++```, indica como será feito o **incremento/decremento** da variável
+
+## Parte 8.4 - O break
+
+- O **break** é utilizado para sair de um laço de repetição antes da condição de saída determinada
+
+- Isso pode ser útil quando se deseja forçar uma parada na iteração mediante alguma outra condição
+
+## Parte 8.5 - O continue
+
+- O **continue** faz com que o programa volte **imediatamente** para a próxima iteração do loop mais próximo, sem executar nada que esteja abaixo dele
+
+- Ele pode ser útil quando é necessário esperar por uma condição específica dentro do loop para tomar alguma ação, e não é necessário fazer nada até que isso aconteça, por exemplo
